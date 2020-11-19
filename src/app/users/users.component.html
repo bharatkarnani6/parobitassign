@@ -1,0 +1,10 @@
+<div class="topcontainer">
+<br><br><br><br><br><br>
+<mat-card class="example-card"><h3 class="text-center pb-0">Select an Account</h3><br><br>
+<div *ngFor="let d of userData; let i = index">
+    <span style="cursor: pointer;"><img src={{d.profilepicture}} alt="Avatar" class="avatar">
+           &nbsp;&nbsp;&nbsp;<a (click)="id(i)">{{d.name}}</a></span><br><br>
+
+</div>
+</mat-card>
+</div>

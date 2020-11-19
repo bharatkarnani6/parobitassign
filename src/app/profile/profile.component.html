@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="row mt-5">
+  <div class="column" style="background-color:white;">
+    &nbsp;&nbsp;<img class="text-center" src={{profileData?.profilepicture}} alt="" class="avatar"><br>
+    <h3 class="pl-4 pt-2 mb-0">{{profileData?.name}}</h3><br><br>
+    <h6 class="mt-0 mb-0">Username : {{profileData?.username}}</h6><br>
+    <h6 class="" style="margin-top: -10px;">E-mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : {{profileData?.email}}</h6><br>
+    <h6 class="" style="margin-top: -20px;">Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{profileData?.phone}}</h6><br>
+    <h6 class="" style="margin-top: -20px;">Website &nbsp;&nbsp;&nbsp;: {{profileData?.website}}</h6>
+    <hr>
+    <h4 class="" style="margin-left:-60px; margin-top: -10px; margin-bottom: -30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Company</h4><br><br>
+    <h6 class="" style="margin-top: 10px;">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{profileData?.company.name}}</h6><br>
+    <h6 class="" style="margin-top: -20px;">catchphrase : {{profileData?.company.catchPhrase}}</h6><br>
+    <h6 class="" style="margin-top: -20px;">bs &nbsp;&nbsp;&nbsp;: {{profileData?.company.bs}}</h6>
+  </div>
+  <div class="column1" style="background-color:white;">
+    <div class="vl">
+      <h4 class="pl-3" style="margin-bottom:-10px; margin-left: 10px;">Address :</h4><br>
+      <h6 class="pl-5" style="margin-top: -10px;">Street : {{profileData?.address.street}}</h6><br>
+      <h6 class="pl-5" style="margin-top: -20px;">Suite : {{profileData?.address.suite}}</h6><br>
+      <h6 class="pl-5" style="margin-top: -20px;">City : {{profileData?.address.city}}</h6><br>
+      <h6 class="pl-5" style="margin-top: -20px;">Zipcode : {{profileData?.address.zipcode}}</h6>
+      <div class="">
+        <iframe width="770" height="400" 
+        src="https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDyLltIyvZSd0C0YVmato63QlqL3q94uYQ" frameborder="0"
+          style="border:0"></iframe>
+      </div>
+      <h6 class="pl-5" style="margin-left:450px;margin-top: 10px; float: left;">Lat : {{profileData?.address.geo.lat}}</h6>
+      <h6 class="pl-5" style="margin-top: 10px; float: left;">Lng : {{profileData?.address.geo.lng}}</h6>
+    </div>
+    
+  </div>
+    
+</div>
